@@ -1,5 +1,18 @@
-template-repository (1.0-1) unstable; urgency=medium
+golang-github-kisom-goutils (0.0~git20161101.0.858c9cb-2.1) unstable; urgency=medium
 
-  * Initial release
+  * Non maintainer upload by the Reproducible Builds team.
+  * No source change upload to rebuild on buildd with .buildinfo files.
 
- -- Tsic404 <liuheng@deepin.org>  Sat, 28 Jan 2023 13:46:49 +0800
+ -- Holger Levsen <holger@debian.org>  Fri, 08 Jan 2021 14:59:38 +0100
+
+golang-github-kisom-goutils (0.0~git20161101.0.858c9cb-2) unstable; urgency=medium
+
+  * Replace golang-go with golang-any in Build-Depends, remove golang-go from Depends
+
+ -- Konstantinos Margaritis <markos@debian.org>  Tue, 08 Aug 2017 20:38:46 +0300
+
+golang-github-kisom-goutils (0.0~git20161101.0.858c9cb-1) unstable; urgency=medium
+
+  * Initial release (Closes: #844472)
+
+ -- Tim Potter <tpot@hpe.com>  Thu, 03 Nov 2016 14:37:16 +1100
