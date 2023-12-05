@@ -1,4 +1,11 @@
 #!/usr/bin/make -f
 
+# Break circular dependency on golang-github-cloudflare-cfssl-dev
+export DH_GOLANG_EXCLUDES = cmd/certdump cmd/certverify logging/example
+
 %:
-	dh $@
+	dh $@ --buildsystem=golang --with=golang
+
+override_dh_auto_install:
+	dh_auto_install
+	rm -r debian/golang-github-kisom-goutils-dev/usr/bin
